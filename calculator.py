@@ -14,21 +14,21 @@ def calculate_stuff():
         input_list = input_string.split(" ")
         if input_list[0] == "+":
             add(input_list[1], input_list[2])
-        elif (subtract):
+        elif input_list[0] == "-":
                 do the subtracty thing
-        elif (multiply):
+        elif input_list[0] == "*":
 
-        elif (divide):
+        elif input_list[0] == "/":
 
-        elif (square):
+        elif input_list[0] == "square":
 
-        elif (cube):
+        elif input_list[0] == "cube":
 
-        elif (power):
+        elif input_list[0] == "pow":
 
-        elif (mod):
+        elif input_list[0] == "mod":
 
-        elif q in input_string:
+        elif 'q' in input_string:
             break
         else:
             print "I don't understand"
