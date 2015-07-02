@@ -14,14 +14,18 @@ def calculate_stuff():
     """
     exit_token = None
     while exit_token != 'q':
+        # Runs program until the user types in 'q'.
+
         input_string = raw_input("> ")
         input_list = input_string.split(" ")
         
+        # Converts user input into integers.
         i = 1
         while i < len(input_list):
             input_list[i] = int(input_list[i])
             i += 1
 
+        
         if input_list[0] == "+":
             print add(input_list[1], input_list[2])
         elif input_list[0] == "-":
